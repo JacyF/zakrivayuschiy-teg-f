@@ -14,7 +14,22 @@
 
 */
 
+/* ============================================== working on BODY  ============================================== */
+
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  padding: 102px 2px 104px;
+  color: var(--main-text-color, #00CC14);
+  background-color: var(--bg-color, #000);
+  background-image: var(--bg-image, #000);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--main-font, Arial, Helvetica, sans-serif);
+  font-size: var(--main-font-size, 18px);
+  font-variation-settings: "wght" var(--main-font-weight, 465);
 }
