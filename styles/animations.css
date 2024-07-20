@@ -26,7 +26,7 @@
     animation: SlideArrowInfinit 0.5s ease-in-out  infinite alternate-reverse;
 }
 
- @keyframes heartSparks {
+@keyframes heartSparks {
     from {
         transform: scale(1);
     }to {
@@ -40,5 +40,5 @@
     }
     100% {
         opacity: 1;
-      }
+    }
 }

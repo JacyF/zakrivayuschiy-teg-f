@@ -132,3 +132,315 @@
   opacity: 60%;
   cursor: pointer;
 }
+
+/* ============================================== working on MAIN  ============================================== */
+
+.main-content {
+  margin: 0 auto;
+  max-inline-size: 696px;
+}
+
+/* ============================= working on LIST  ============================= */
+
+.main-content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 698px;
+  inline-size: 100%;
+  border: 2px solid var(--border-color, #00CC14);
+  background-color: var(--bg-color, #000);
+}
+
+/* ===================== working on ITEM TITLE  ===================== */
+
+.content-list-item-title {
+  padding: 5px 10px 4px;
+  border-block-end: 2px solid var(--border-color, #00CC14);
+  font-size: var(--main-font-size, 18px);
+  line-height: 21.78px;
+  font-variation-settings: 'wght' var(--font-weight-heading, 785);
+}
+
+/* ===================== working on ITEM IMAGE  ===================== */
+
+.image-wrapper-block {
+  text-shadow: -1px 0 var(--text-stroke-color, #000),
+              0 1px var(--text-stroke-color, #000),
+              1px 0 var(--text-stroke-color, #000),
+              0 -1px var(--text-stroke-color, #000);
+  max-block-size: 696px;
+}
+
+@supports (-webkit-text-stroke: 0.5px var(--text-stroke-color)) {
+  .item__image-wrapper {
+      text-shadow: none;
+      -webkit-text-stroke: 0.5px var(--text-stroke-color, #000);
+  }
+}
+
+.image-wrapper-block::after {
+  content: '</HTML>';
+  position: absolute;
+  inset-block-start: 57px;
+  inset-inline-end: 26px;
+  color: var(--border-color, #00CC14);
+  font-family: var(--accent-font, Arial, Helvetica, sans-serif);
+  font-size: var(--small-font-size, 14px);
+  mix-blend-mode: hard-light;
+}
+
+.image-wrapper {
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: right;
+  aspect-ratio: 1 / 1;
+}
+
+/* ============== working on FILTERS  ============== */
+
+.filter-brightness {
+  filter: brightness(1.2);
+}
+
+/* ===================== working on TEXT BLOCK  ===================== */
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 29px 25px 5px 27px;
+  border-block-start: 2px solid var(--border-color, #00CC14);
+  font-size: var(--main-font-size, 18px);
+}
+
+.text-paragraph {
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+/* ============== working on CARD LIKE  ============== */
+
+.card__like-wrapper {
+  display: flex;
+  place-self: end;
+  align-items: start;
+  gap: 8px;
+  margin-block-end: 22px;
+}
+
+/* ======= working on ICON LIKE BUTTON  ======= */
+
+button {
+  border: none;
+  background: none;
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-block-size: 34px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--border-color, #00CC14);
+}
+
+.like-icon {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.core {
+  fill: transparent;
+  transition: fill linear 0.3s 0.03s;
+}
+
+.contour {
+  transition: fill linear 0.1s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill linear 0.3s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-fill, #ff0000);
+  transition: fill linear 0.3s;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-fill, #ff0000);
+  transition: fill linear 0.3s;
+}
+
+.like-icon:hover .core {
+  fill: var(--border-color, #00CC14);
+  transition: fill linear 0.3s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill, #ff0000);
+  transition: fill linear 0.3s 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill, #ff0000);
+  transition: fill linear 0.3s 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-fill, #ff0000);
+  transition: fill linear 0.3s 0.05s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--border-color, #00CC14);
+  transition: fill linear 0.3s 0.05s;
+}
+
+/* ======= working on LIKE BUTTON  ======= */
+
+.card__like-button {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  inline-size: 126px;
+  block-size: 34px;
+}
+
+.button-decorate {
+  border: 2px solid var(--border-color, #00CC14);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.button-decorate::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--border-color, #00CC14);
+  color: var(--bg-color, #000);
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.button-decorate:hover::before {
+  transform: translateX(0);
+  color:#fff;
+}
+
+.button-decorate:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-decorate:focus-visible {
+  box-shadow: 2px 2px 0 2px var(--border-color, #00CC14);
+}
+
+.button__text {
+  display: inline-block;
+  color: var(--button-text-color, #00CC14);
+  font-family: var(--accent-font, "fantasy");
+  mix-blend-mode: difference;
+}
+
+.button__text-card {
+  padding-block-start: 6px;
+}
+
+/* ============================= working on BLOCK SAVE  ============================= */
+
+.save-block {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 51px;
+}
+
+/* ============== working on SAVE BUTTON  ============== */
+
+.save-block_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  inline-size: 335px;
+  max-block-size: 84px;
+  min-block-size: 55px;
+  background-color: var(--bg-color, #000);
+  overflow: hidden;
+  font-family: var(--accent-font, "fantasy");
+  font-size: var( --small-font-size, 14px);
+}
+
+.floppy {
+  inline-size: 24px;
+  block-size: 24px;
+  color: var(--button-text-color, #00CC14);
+  mix-blend-mode: difference;
+}
+
+/* ============== working on SAVE BUTTON  ============== */
+
+.insert-disk {
+  padding: 30px;
+  outline: 1px solid var(--border-color,#000);
+  background-color: var(--bg-color, #000);
+  color: var(--main-text-color, #00CC14);
+  font-size: var( --small-font-size, 14px);
+  font-family: var(--accent-font, "fantasy");
+}
+
+.insert-disk::backdrop {
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.insert-disk[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.dialog-content_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog-text {
+  max-inline-size: 234px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.dialog-floppy {
+  inline-size: 39px;
+}
+
+.dialog-button {
+  position: relative;
+  max-inline-size: 293px;
+  inline-size: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+}
