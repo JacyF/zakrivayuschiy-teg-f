@@ -187,7 +187,7 @@
 }
 
 .image-wrapper-block::after {
-  content: '</HTML>';
+  content: '<Mood>';
   position: absolute;
   inset-block-start: 57px;
   inset-inline-end: 26px;
@@ -201,14 +201,41 @@
   display: block;
   inline-size: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: center;
   aspect-ratio: 1 / 1;
 }
 
 /* ============== working on FILTERS  ============== */
+.filter-saturate {
+  filter: saturate(40%);
+}
 
 .filter-brightness {
   filter: brightness(1.2);
+}
+
+.filter-invert {
+  filter: invert(1);
+}
+
+.filter-sepia {
+  filter: sepia(0.5);
+}
+
+.filter-blur {
+  filter: blur(1px);
+}
+
+.filter-contrast {
+  filter: contrast(1.5);
+}
+
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.filter-mixed {
+  filter: saturate(0.5) brightness(1) invert(0.1);
 }
 
 /* ===================== working on TEXT BLOCK  ===================== */
