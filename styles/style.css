@@ -20,7 +20,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 102px;
+  gap: 98px;
+  /* gap: 102px; */
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding: 102px 2px 104px;
@@ -37,22 +38,25 @@
 /* ============================================== working on HEADER  ============================================== */
 
 .header {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   max-inline-size: 696px;
-  padding: 135px 118px 19px 119px;
+  inline-size: 100%;
+  margin: auto;
+  /* padding: 135px 118px 19px 119px; */
+  padding-block-start: 137px;
   border: 2px solid var(--main-text-color, #00CC14);
   background-color: var(--bg-color, #000);
   font-family: var(--accent-font, Arial, Helvetica, sans-serif);
-  text-transform: uppercase; */
+  text-transform: uppercase;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 0 auto 103px; */
+
   margin: auto;
   padding-block-start: 137px;
   outline: 2px solid var(--border-color);
@@ -61,7 +65,7 @@
   max-inline-size: 696px;
   inline-size: 100%;
   text-transform: uppercase;
-  gap: 20px;
+  gap: 20px; */
 }
 
 /* ===================== working on HEADER-BLOCK  ===================== */
@@ -71,7 +75,8 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
+  margin-bottom: 4px;
 }
 
 .header-title {
@@ -93,7 +98,8 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 4px;
+  gap: 5px;
+  /* gap: 4px; */
   padding-inline-start: clamp(1.25rem, 1.429rem + -0.476vw, 1rem);
 }
 
@@ -205,8 +211,10 @@
 .image-wrapper-block::after {
   content: '<Mood>';
   position: absolute;
-  inset-block-start: 57px;
-  inset-inline-end: 26px;
+  /* inset-block-start: 57px;
+  inset-inline-end: 26px; */
+  inset-block-start: 59px;
+    inset-inline-end: 34px;
   color: var(--border-color, #00CC14);
   font-family: var(--accent-font, Arial, Helvetica, sans-serif);
   font-size: var(--small-font-size, 14px);
@@ -276,7 +284,8 @@
   display: flex;
   place-self: end;
   align-items: start;
-  gap: 8px;
+  /* gap: 8px; */
+  gap: 4px;
   margin-block-end: 22px;
 }
 
@@ -428,7 +437,8 @@ button {
   gap: 9px;
   inline-size: 335px;
   max-block-size: 84px;
-  min-block-size: 55px;
+  min-block-size: 53px;
+  /* min-block-size: 55px; */
   background-color: var(--bg-color, #000);
   overflow: hidden;
   font-family: var(--accent-font, "fantasy");
@@ -507,6 +517,9 @@ button {
   .content-list-item {
     max-inline-size: 698px;}
 
+    .card__like-wrapper {
+      /* gap: 4px; */
+    }
 
 .save-block {
   
