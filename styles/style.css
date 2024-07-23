@@ -283,6 +283,8 @@ button {
   justify-content: center;
   align-items: center;
   max-block-size: 34px;
+  padding: 0;
+  align-self: center;
 }
 
 .card__icon-button:focus {
@@ -290,6 +292,7 @@ button {
 }
 
 .card__icon-button:focus-visible {
+  /* align-self: center; */
   /* border: 2px solid var(--border-color, #00CC14); */
   outline: 2px solid var(--border-color, #00CC14);
 }
@@ -355,10 +358,12 @@ button {
   overflow: hidden;
   font-size: 14px;
   inline-size: 127px;
-  block-size: 34px;
+  /* block-size: 34px; */
+  block-size: 38px;
 }
 
 .button-decorate {
+
   border: 2px solid var(--border-color, #00CC14);
   transition: box-shadow 0.5s ease-in-out;
 }
