@@ -290,7 +290,8 @@ button {
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--border-color, #00CC14);
+  /* border: 2px solid var(--border-color, #00CC14); */
+  outline: 2px solid var(--border-color, #00CC14);
 }
 
 .like-icon {
