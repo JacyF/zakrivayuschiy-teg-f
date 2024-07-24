@@ -492,7 +492,7 @@ button {
 .button__text {
   display: inline-block;
   color: var(--button-text-color, #00CC14);
-  font-family: var(--accent-font, "fantasy");
+  font-family: var(--accent-font, fantasy);
   mix-blend-mode: difference;
 }
 
@@ -521,7 +521,7 @@ button {
   min-block-size: 53px;
   background-color: var(--bg-color, #000);
   overflow: hidden;
-  font-family: var(--accent-font, "fantasy");
+  font-family: var(--accent-font, fantasy);
   font-size: var( --small-font-size, 14px);
 }
 
@@ -540,7 +540,7 @@ button {
   background-color: var(--bg-color, #000);
   color: var(--main-text-color, #00CC14);
   font-size: var( --small-font-size, 14px);
-  font-family: var(--accent-font, "fantasy");
+  font-family: var(--accent-font, fantasy);
 }
 
 .dialog::backdrop {
