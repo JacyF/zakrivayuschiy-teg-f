@@ -297,12 +297,12 @@ button {
   outline: 2px solid var(--border-color, #00CC14);
 }
 
-.like-icon {
+/* .like-icon {
   transform: scale(1);
   cursor: pointer;
-}
+} */
 
-.core {
+/* .core {
   fill: transparent;
   transition: fill linear 0.3s 0.03s;
 }
@@ -314,7 +314,102 @@ button {
 .main-body {
   fill: transparent;
   transition: fill linear 0.3s;
+} */
+
+/**/
+
+
+ 
+.like-icon .heart {
+  transform-origin: center;
 }
+
+.like-icon .core {
+  /* fill: var(--heart-invisible-color); */
+  fill: transparent;
+  transition: fill 0.3s linear;
+  transition-delay: 0.03s;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+
+  /* fill: var(--heart-invisible-color); */
+  transition: fill 0.3s linear;
+}
+
+.like-icon .contour {
+  /* fill: var(--heart-main-color); */
+  fill: var(--main-text-color);
+  transition: fill 0.1s linear;
+}
+
+/* закрашивание внутренней части сердечка при ховере */
+.like-icon:hover .core {
+  transition: fill 0.3s linear;
+  fill: var(--border-color);
+  /* fill: var(--heart-main-color); */
+}
+
+.like-icon:hover .main-body {
+  transition: fill 0.3s linear;
+  transition-delay: 0.05s;
+  fill: var(--border-color);
+
+  /* fill: var(--heart-main-color); */
+}
+
+/* перекрашивание сердечка в красный при зажатии */
+.like-icon:active .core {
+  transition: fill 0.3s linear;
+  /* fill: var(--heart-accent-color); */
+  fill: var(--heart-fill);
+}
+
+.like-icon:active .main-body {
+  transition: fill 0.3s linear;
+  transition-delay: 0.05s;
+  /* fill: var(--heart-accent-color); */
+  fill: var(--heart-fill);
+
+}
+
+/* перекрашивание и анимация сердечка при клике */
+.like-icon.is-liked .core {
+  transition: fill 0.3s linear;
+  /* fill: var(--heart-accent-color); */
+  fill: var(--heart-fill);
+
+}
+
+.like-icon.is-liked .main-body {
+  transition: fill 0.3s linear;
+  transition-delay: 0.05s;
+  /* fill: var(--heart-accent-color); */
+  fill: var(--heart-fill);
+
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill);
+
+  /* fill: var(--heart-accent-color); */
+  transition: fill 0.3s linear;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: change-size 0.3s ease-in 0.1s alternate;
+}
+
+
+
+
+
+
+
+
+/* 
 
 .like-icon.is-liked .core {
   fill: var(--heart-fill, #ff0000);
@@ -349,7 +444,7 @@ button {
 .like-icon:hover .main-body {
   fill: var(--border-color, #00CC14);
   transition: fill linear 0.3s 0.05s;
-}
+} */
 
 /* ======= working on LIKE BUTTON  ======= */
 
