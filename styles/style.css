@@ -534,7 +534,7 @@ button {
 
 /* ============== working on SAVE BUTTON  ============== */
 
-.insert-disk {
+.dialog {
   padding: 30px;
   outline: 1px solid var(--border-color,#000);
   background-color: var(--bg-color, #000);
@@ -543,11 +543,11 @@ button {
   font-family: var(--accent-font, "fantasy");
 }
 
-.insert-disk::backdrop {
+.dialog::backdrop {
   background-color: rgba(0, 0, 0, .75);
 }
 
-.insert-disk[open] {
+.dialog[open] {
   display: flex;
   flex-direction: column;
   align-items: center;
