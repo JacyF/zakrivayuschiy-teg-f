@@ -209,6 +209,7 @@
 }
 
 /* ============== working on FILTERS  ============== */
+
 .filter-saturate {
   filter: saturate(40%);
 }
@@ -292,12 +293,8 @@ button {
 }
 
 .card__icon-button:focus-visible {
-  /* align-self: center; */
-  /* border: 2px solid var(--border-color, #00CC14); */
   outline: 2px solid var(--border-color, #00CC14);
 }
-
-
 
 /* ======= working on LIKE BUTTON  ======= */
 
@@ -306,12 +303,10 @@ button {
   overflow: hidden;
   font-size: 14px;
   inline-size: 127px;
-  /* block-size: 34px; */
   block-size: 38px;
 }
 
 .button-decorate {
-
   border: 2px solid var(--border-color, #00CC14);
   transition: box-shadow 0.5s ease-in-out;
 }
@@ -337,9 +332,7 @@ button {
 }
 
 .button-decorate:focus-visible {
-  /* box-shadow: 2px 2px 0 2px var(--border-color, #00CC14); */
   box-shadow: 2px 2px 0 0 var(--border-color, #00CC14);
-
 }
 
 .button__text {
